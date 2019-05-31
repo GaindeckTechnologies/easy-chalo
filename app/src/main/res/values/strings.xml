@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">Easy Chalo</string>
+    <string name="skip_text">SKIP</string>
+    <string name="intro_text_one">Plan trips to all places</string>
+    <string name="intro_text_one_line_two">with few clicks in your mobile screen</string>
+    <string name="intro_title_text">PLAN A TRIP</string>
+    <string name="intro_title_text_two">START YOUR JOURNEY</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="intro_text_two">Hassle-free and quick ticket booking to</string>
+    <string name="intro_text_two_line_two">any destinations</string>
+    <string name="intro_title_text_three">TRIP SCHEDULE</string>
+    <string name="intro_text_three">Real-time ticket status to help you</string>
+    <string name="intro_text_three_line_two">stay on top of your trip plan</string>
+    <string name="intro_title_text_four">HAPPY JOURNEY!</string>
+    <string name="intro_text_four">Welcome to easy chalo!</string>
+    <string name="intro_text_four_line_two">Have a nice journey…</string>
+    <string name="choose_language_line_one">Choose Your</string>
+    <string name="choose_language_line_two">Display Language</string>
+    <string name="select_one_language">Please Select One</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="continue_lang">Continue</string>
+    <string name="intro_phone_title">Let\'s start \nwith your phone number</string>
+    <string name="phone_number">Enter your phone number</string>
+    <string name="next">Next</string>
+    <string name="verify_otp">Verify your \nmobile number</string>
+    <string name="otp_description">We sent a OTP to verify your phone number</string>
+    <string name="search_bus">Search Bus</string>
+    <string name="from_location">From</string>
+    <string name="to_location">To</string>
+    <string name="journey_date">Date of Journey</string>
+    <string name="search_button">Search</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
 </resources>

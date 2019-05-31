@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".view.fragment.SearchBusFragment"
+             android:background="@color/homeBackground">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHomeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/fifty_four_dp"
+                android:text="@string/search_bus"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/twenty_sp"
+                android:drawableStart="@drawable/ic_from_location"
+                android:drawablePadding="@dimen/eighteen_dp"
+                android:drawableEnd="@drawable/ic_to_location"/>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/ten_dp"
+                tools:targetApi="lollipop"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHomeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/thirty_eight_dp"
+                android:layout_marginStart="@dimen/thirty_eight_dp"
+                android:layout_marginEnd="@dimen/thirty_eight_dp"
+                android:padding="@dimen/ten_dp"
+                app:cardCornerRadius="@dimen/ten_dp"
+                android:id="@+id/cardViewSearchBus">
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/layoutTextFromLocation">
+
+                    <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_from_location"
+                            android:background="@null"
+                            android:id="@+id/editTextFromLocation"
+                            android:hint="@string/from_location"
+                            android:padding="@dimen/ten_dp"
+                            android:drawablePadding="@dimen/ten_dp"
+                            android:cursorVisible="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_dp"
+                        android:background="@color/descTextColor"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutTextFromLocation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/two_dp"
+                        android:id="@+id/viewLineFromLocation"/>
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutToLocation"
+                        app:layout_constraintTop_toBottomOf="@+id/viewLineFromLocation"
+                        android:padding="@dimen/two_dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                    <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editTextToLocation"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_to_location"
+                            android:padding="@dimen/ten_dp"
+                            android:hint="@string/to_location"
+                            android:drawablePadding="@dimen/ten_dp"
+                            android:cursorVisible="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_dp"
+                        android:background="@color/descTextColor"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutToLocation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/two_dp"
+                        android:id="@+id/viewLineToLocation"/>
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutJourneyDate"
+                        app:layout_constraintTop_toBottomOf="@+id/viewLineToLocation"
+                        android:padding="@dimen/two_dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                    <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editTextJourneyDate"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_date"
+                            android:padding="@dimen/ten_dp"
+                            android:hint="@string/journey_date"
+                            android:drawablePadding="@dimen/ten_dp"
+                            android:cursorVisible="false"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSearchBus"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewSearchBus"
+                android:layout_marginTop="@dimen/thirty_eight_dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/thirty_eight_dp"
+                android:layout_marginEnd="@dimen/thirty_eight_dp"
+                android:background="@drawable/ic_button_bg"
+                android:textSize="@dimen/sixteen_sp"
+                android:gravity="center"
+                android:text="@string/search_button"
+                android:textColor="@color/colorWhite"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
