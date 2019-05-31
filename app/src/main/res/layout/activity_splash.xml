@@ -7,13 +7,45 @@
         android:layout_height="match_parent"
         tools:context=".view.activity.SplashScreenActivity">
 
-        <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/lottieAnimationViewSplash"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+    <!-- <com.airbnb.lottie.LottieAnimationView
+             android:id="@+id/lottieAnimationViewSplash"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewTopLayer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_top_layer"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewLogo"
+            app:srcCompat="@drawable/logo"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTopLayer"
+            android:layout_marginTop="@dimen/thirty_eight_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewHomeBottom"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewHomeBottom"
+            app:srcCompat="@drawable/ic_home_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

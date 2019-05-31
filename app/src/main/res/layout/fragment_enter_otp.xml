@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".view.fragment.EnterOTPFragment"
+             android:background="@color/colorWhite">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewVerifyOtp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/verify_otp"
+                android:layout_marginStart="@dimen/thirty_eight_dp"
+                android:layout_marginTop="@dimen/one_zero_eight_dp"
+                android:textSize="@dimen/twenty_sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVerifyOtp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/thirty_eight_dp"
+                android:layout_marginTop="@dimen/eighteen_dp"
+                android:text="@string/otp_description"
+                android:id="@+id/textViewOtpDescription"/>
+
+        <com.poovam.pinedittextfield.LinePinField
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:noOfFields="4"
+                android:textSize="@dimen/sixteen_sp"
+                android:id="@+id/linePinField"
+                app:layout_constraintTop_toBottomOf="@+id/textViewOtpDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/thirty_eight_dp"
+                app:highlightType="currentField"
+                android:textSelectHandle="@drawable/text_handle"
+                app:distanceInBetween="@dimen/ten_dp"
+                app:fieldColor="@color/colorAccent"
+                app:highlightColor="@color/colorPrimary"
+                app:lineThickness="@dimen/two_dp"
+                app:bottomTextPaddingDp="@dimen/two_dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
